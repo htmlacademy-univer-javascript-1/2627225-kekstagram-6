@@ -1,4 +1,5 @@
 const checkLength = (string = '', maxLength = 1) => (string.length <= maxLength);
+
 const checkPalindrome = function (string = '') {
   string = string.toLowerCase().replaceAll(' ', '');
   let result = '';
@@ -7,6 +8,8 @@ const checkPalindrome = function (string = '') {
   }
   return result === string;
 };
+
+
 const findNumbers = function (string) {
   let result = '';
   if (!string.isNaN) {
@@ -54,3 +57,7 @@ const isOutOfBounds = function (workdayStartTime = '', workdayEndTime = '',
 };
 
 isOutOfBounds();
+
+checkLength();
+checkPalindrome();
+findNumbers();
